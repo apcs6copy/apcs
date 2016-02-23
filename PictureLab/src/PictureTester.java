@@ -6,8 +6,23 @@
  * @author Barbara Ericson
  */
 public class PictureTester {
+	
+	
+	public static void testMirrorArms() {
+		Picture snowman = new Picture("snowman.jpg");
+		snowman.explore();
+		snowman.mirrorArms();
+		snowman.explore();
+		
+	}
+	
+	public static void testMirrorGull() {
+		Picture beach = new Picture("seagull.jpg");
+		beach.explore();
+		beach.mirrorGull();
+		beach.explore();
+	}
 
-	/** Method to test zeroBlue */
 	public static void testKeepOnlyBlue() {
 		Picture beach = new Picture("beach.jpg");
 		beach.explore();
@@ -61,7 +76,7 @@ public class PictureTester {
 		// and comment out the ones you don't want
 		// to run
 		// testZeroBlue();
-		testKeepOnlyBlue();
+		// testKeepOnlyBlue();
 		// testKeepOnlyRed();
 		// testKeepOnlyGreen();
 		// testNegate();
@@ -69,7 +84,7 @@ public class PictureTester {
 		// testFixUnderwater();
 		// testMirrorVertical();
 		// testMirrorTemple();
-		// testMirrorArms();
+		 testMirrorArms();
 		// testMirrorGull();
 		// testMirrorDiagonal();
 		// testCollage();
